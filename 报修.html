@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/baoxiu.css">
+    <script src=""></script>
+    <script src="font/iconfont.js"></script>
+    <link rel="stylesheet" href="bootsrtpt/css/bootstrap.min.css">
+    <script src="bootsrtpt/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="fanhui">
+            <a href="Page.html"><svg class="icon icon-fh" aria-hidden="true">
+                <use xlink:href="#icon-fanhui"></use>
+              </svg>
+            <span>返回</span></a>
+
+        </div>
+        <div class="biaoti">
+            <h3>报修</h3>
+        </div>
+        <div class="xialacaidang">
+            <svg class="icon incn-xialacaidang" aria-hidden="true">
+                <use xlink:href="#icon-gengduo"></use>
+              </svg>
+        </div>
+    </div>
+    <div class="main">
+        <div class="xiaoqu">
+            <span>报修小区</span>
+            <select class="combobox">xx
+                <option></option>
+                <option value="PA">xx小区</option>
+                <option value="CT">xx小区</option>
+                <option value="NY">xx小区</option>
+                <option value="MD">xx小区</option>
+                <option value="VA">xx小区</option>
+              </select>
+        </div>
+        <div class="fenglei">
+            <span>报修分类</span>
+            <select class="combobox">
+                <option></option>
+                <option value="PA">Pennsylvania</option>
+                <option value="CT">Connecticut</option>
+                <option value="NY">New York</option>
+                <option value="MD">Maryland</option>
+                <option value="VA">Virginia</option>
+              </select>
+        </div>
+        <div class="chengdu"><span>严重程度</span>
+            <select class="combobox">
+                <option></option>
+                <option value="PA">Pennsylvania</option>
+                <option value="CT">Connecticut</option>
+                <option value="NY">New York</option>
+                <option value="MD">Maryland</option>
+                <option value="VA">Virginia</option>
+              </select></div>
+        <div class="time">
+            <span>接待时间</span>
+            <select class="combobox">
+                <option></option>
+                <option value="PA">Pennsylvania</option>
+                <option value="CT">Connecticut</option>
+                <option value="NY">New York</option>
+                <option value="MD">Maryland</option>
+                <option value="VA">Virginia</option>
+              </select>
+        </div>
+        <!-- <div class="addicon"></div> -->
+
+        <textarea name="" id="" cols="40" rows="40" placeholder="请输入问题描述，以便于我们准确定位及时处理。"></textarea>
+
+        <div class="btn1"><input type="button" value="提交"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.combobox').combobox();
+    });
+</script>
+
+</html>

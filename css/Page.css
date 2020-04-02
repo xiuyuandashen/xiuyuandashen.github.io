@@ -1,0 +1,245 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh);
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Baloo Thambi 2', cursive; */
+    }
+    
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+    
+    .icon-sousuo {
+        width: 0.85em;
+        height: 0.85em;
+    }
+    
+    .icon-bottom {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    
+    .icon-logo {
+        width: 3em;
+        height: 3em;
+    }
+    
+    .icon-fuwu {
+        width: 2em;
+        height: 2em;
+    }
+    
+    .header,
+    .main,
+    .bottom {
+        width: 100%;
+    }
+    
+    .header {
+        /* box-sizing: border-box; */
+        height: calc(10vh);
+        box-shadow: 0px 0px 5px #999;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: row;
+        /*子元素设置了flex 这个已经失效了*/
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    
+    .logo>svg {
+        margin-top: 1.5vh;
+    }
+    
+    .main {
+        top: 10vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .bottom {
+        height: 10vh;
+        /* background-color: skyblue; */
+        box-shadow: 0px 0px 5px #999;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background-color: #fff;
+    }
+    
+    .header .sousuomain {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        /* border: 1px solid #999; */
+        height: calc(10vh*0.6);
+        align-items: center;
+        border-radius: 1em;
+        background-color: #99999952;
+        flex: 5;
+    }
+    
+    .header .sousuomain .span .icon use {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .span {
+        margin: 0 0.5em 0 0.7em;
+    }
+    
+    .sousuomain input {
+        width: 60%;
+        /* 改变输入的文字大小 */
+        font-size: .7em;
+        border: none;
+        outline: none;
+        background: transparent;
+        flex: 1;
+    }
+    
+    .Qr-code {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .Telephone {
+        text-align: center;
+        flex: 1;
+    }
+    
+    .logo {
+        text-align: center;
+        /* margin-left: 3vw; */
+        margin: 0 1vw 0 3vw;
+        flex: 1;
+    }
+    
+    .bottom>div {
+        height: 70%;
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #999;
+    }
+    
+    a:hover {
+        color: pink;
+    }
+    
+    .main .fuwu1 {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 12vh;
+        width: 100%;
+        /* order: 1; */
+    }
+    
+    .fuwu1>div {
+        border: 1px solid #999;
+        width: 20%;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 5px #999;
+        border-radius: .8em;
+    }
+    
+    .fuwu {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 28vh;
+        margin-top: 3vh;
+        /* border: 1px solid #999; */
+        border-radius: 1em;
+        padding: 2vw;
+        box-shadow: 0px 0px 5px #999;
+        /* order: 3; */
+    }
+    
+    .fuwu>a {
+        display: block;
+        width: 22%;
+        height: 12vh;
+        /* background-color: pink; */
+    }
+    
+    .fuwu a>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fuwu a>div p {
+        margin-top: 1.5vh;
+        font-size: 1em;
+    }
+    
+    .guangaowei {
+        position: relative;
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 10vh;
+        /* order: 2; */
+    }
+    
+    .guangaowei>div {
+        width: 94%;
+        height: 30vh;
+        background-color: rgba(135, 206, 235, 0.5);
+        /* opacity: 0.5; */
+        border-radius: 1em;
+        margin-bottom: 3vh;
+        text-align: center;
+        line-height: 30vh;
+        font-size: 2em;
+        box-shadow: 0 0 5px #999;
+    }
